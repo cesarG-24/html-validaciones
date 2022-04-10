@@ -1,0 +1,44 @@
+
+<meta charset="UTF-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+<div>
+    <div>
+        Carro tiene un tanque de 40 Lt, usando gasolina y consumiendo todo el taque recorre 480km.
+        El mismo carro usando alcohol y consumiendo todo el taque recorre 300km.
+    </div><br>
+    <div>
+        <strong>¿Cuál es el consumo de gasolina?</strong><br>
+        <span style="text-decoration: underline">Para calcular el consumo:</span>
+        divide la distancia recorrida por la cantidad de litros gastados
+    </div>
+</div><br><br>
+
+
+<script>
+
+    var recorridoEnGasolina = 480;
+    var capacidadDelTanque = 40;
+    var recorridoEnAlcochol = 300;
+
+    document.write("El consumo de gasolina del carro =" + 480/40+"km/l");
+    document.write("<br>");
+    document.write("El consumo de gasolina del carro =" + recorridoEnGasolina/capacidadDelTanque+"km/l");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("_________________________________________<br><br>")
+    document.write("El consumo de alcohol del carro =" + 300/40+"km/l");
+    document.write("<br>");
+    document.write("El consumo de alcochol del carro ="+recorridoEnAlcochol/capacidadDelTanque+" km/l")
+    document.write("<br><br>");
+    var consumoDeAlcohol = recorridoEnAlcochol/capacidadDelTanque;
+    var consumoDeGasolina = recorridoEnGasolina/capacidadDelTanque;
+
+    document.write("_________________________________________<br><br>")
+    document.write("El consumo del carro al usar alcohol es de "+ Math.round(consumoDeAlcohol) + "km/l")
+    document.write("<br>");
+    document.write("El consumo del carro al usar gasolina es de "+ consumoDeGasolina+"km/l")
+    document.write("<br>");
+
+</script>
